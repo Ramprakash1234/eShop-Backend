@@ -79,7 +79,7 @@ router.get('/getProducts', async (req, res) => {
 	    from: 'dummy6506@gmail.com', 
 	    to: req.body.email,         
 	    subject: 'Order confirmation',
-	    text: `Hi ${req.body.email}, your bill amount of Rs.${req.body.orderAmount} is successful`
+	    text: `Hi ${req.body.email}, your bill amount of Rs.${req.body.orderAmount} is successful. You will receive your product within 2 weeks`
 	  };
 	  transport.sendMail(message, function(err, info) {
 	    if (err) {

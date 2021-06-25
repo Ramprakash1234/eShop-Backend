@@ -21,6 +21,6 @@ const allRoutes=require('./routes/productsRoutes')
 app.use('/api/',allRoutes)
 
 //Server Running at Port 5000
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("Backend Server started...");
 });
